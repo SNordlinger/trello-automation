@@ -6,6 +6,9 @@
  []
 
  :builds
- {:lambda {:target :node-library
-           :output-to "handler.js"
+ {:repl {:target :node-library
+         :output-to "build/repl/runtime.js"
+         :exports {:archive serverless.core/archive}}
+  :lambda {:target :node-library
+           :output-to "build/release/handler.js"
            :exports {:archive serverless.core/archive}}}}

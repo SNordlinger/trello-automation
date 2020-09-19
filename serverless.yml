@@ -1,6 +1,12 @@
 service: trello-automation
 provider:
   name: aws
+package:
+  exclude:
+    - ./**
+  include:
+    - build/release/**
+    - config/**
 functions:
   archive:
-    handler: handler.archive
+    handler: build/release/handler.archive
