@@ -1,0 +1,11 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src"]
+
+ :dependencies
+ []
+
+ :builds
+ {:lambda {:target :node-library
+           :output-to "handler.js"
+           :exports {:archive serverless.core/archive}}}}

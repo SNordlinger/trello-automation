@@ -1,0 +1,14 @@
+{
+  "name": "trello-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "build": "shadow-cljs release lambda"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "shadow-cljs": "^2.10.21"
+  }
+}

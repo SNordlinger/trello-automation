@@ -1,0 +1,9 @@
+node_modules
+.serverless
+.calva
+.shadow-cljs
+handler.js
+.DS_Store
+.vscode
+*.swp
+*~

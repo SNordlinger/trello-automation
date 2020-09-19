@@ -1,0 +1,6 @@
+service: trello-automation
+provider:
+  name: aws
+functions:
+  archive:
+    handler: handler.archive
