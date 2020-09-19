@@ -1,0 +1,5 @@
+{:secrets #profile {:dev #include #join [#env HOME "/.secrets.edn"]}
+ 
+ :trello {
+          :api-token #or [#env "TRELLO_API_TOKEN"
+                          #ref [:secrets :trello-api-token]]}}

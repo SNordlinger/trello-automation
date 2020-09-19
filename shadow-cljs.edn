@@ -3,7 +3,7 @@
  ["src"]
 
  :dependencies
- []
+ [[aero "1.1.6"]]
 
  :builds
  {:repl {:target :node-library
