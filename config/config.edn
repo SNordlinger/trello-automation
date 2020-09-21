@@ -1,5 +1,7 @@
 {:secrets #profile {:dev #include #join [#env HOME "/.secrets.edn"]}
  
- :trello {
-          :api-token #or [#env "TRELLO_API_TOKEN"
-                          #ref [:secrets :trello-api-token]]}}
+ :trello {:api-url "https://api.trello.com"
+          :api-token #profile {:prod #env "TRELLO_API_TOKEN"
+                               :dev #ref [:secrets :trello-api-token]}
+          :api-key #profile {:prod #env "TRELLO_API_KEY"
+                             :dev #ref [:secrets :trello-api-key]}}}
