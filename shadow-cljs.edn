@@ -3,7 +3,8 @@
  ["src"]
 
  :dependencies
- [[aero "1.1.6"]]
+ [[aero "1.1.6"]
+  [cider/cider-nrepl "0.25.3"]]
 
  :builds
  {:repl {:target :node-library
