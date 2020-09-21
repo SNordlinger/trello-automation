@@ -4,11 +4,15 @@
   "description": "",
   "main": "handler.js",
   "scripts": {
-    "build": "shadow-cljs release lambda"
+    "build": "shadow-cljs release lambda",
+    "repl": "shadow-cljs node-repl"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "shadow-cljs": "^2.10.21"
+    "shadow-cljs": "^2.11.4"
+  },
+  "dependencies": {
+    "axios": "^0.20.0"
   }
 }
