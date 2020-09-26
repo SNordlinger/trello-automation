@@ -3,13 +3,12 @@
  ["src"]
 
  :dependencies
- [[aero "1.1.6"]
-  [cider/cider-nrepl "0.25.3"]]
+ [[aero "1.1.6"]]
 
  :builds
  {:repl {:target :node-library
          :output-to "build/repl/runtime.js"
-         :exports {:archive serverless.core/archive}}
+         :exports {:archive trello-automation.core/archive}}
   :lambda {:target :node-library
            :output-to "build/release/handler.js"
-           :exports {:archive serverless.core/archive}}}}
+           :exports {:archive trello-automation.core/archive}}}}
