@@ -1,9 +1,8 @@
-node_modules
+env/
+dist/
 .serverless
-.calva
-.shadow-cljs
-build
-.DS_Store
 .vscode
-*.swp
-*~
+node_modules
+.env
+__pycache__
+**/*.pyc

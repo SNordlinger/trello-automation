@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "trello-automation"
+version = "0.1.0"
+description = ""
+authors = ["Sam Nordlinger"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.24.0"
+python-dotenv = "^0.14.0"
+python-dateutil = "^2.8.1"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.4"
+yapf = "^0.30.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

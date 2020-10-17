@@ -2,17 +2,26 @@
   "name": "trello-automation",
   "version": "1.0.0",
   "description": "",
-  "main": "handler.js",
+  "main": "index.js",
   "scripts": {
-    "build": "shadow-cljs release lambda",
-    "repl": "shadow-cljs node-repl"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SNordlinger/trello-automation.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "MIT",
-  "devDependencies": {
-    "shadow-cljs": "^2.11.4"
+  "bugs": {
+    "url": "https://github.com/SNordlinger/trello-automation/issues"
   },
+  "homepage": "https://github.com/SNordlinger/trello-automation#readme",
   "dependencies": {
-    "axios": "^0.20.0"
+    "npm": "^6.14.8"
+  },
+  "devDependencies": {
+    "serverless": "^2.6.0",
+    "serverless-python-requirements": "^5.1.0"
   }
 }
