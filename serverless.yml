@@ -7,6 +7,8 @@ provider:
   stage: dev
   region: us-west-2
 
+  logRetentionInDays: 30
+
 # you can add statements to the Lambda function's IAM Role here
 #  iamRoleStatements:
 #    - Effect: "Allow"
@@ -77,6 +79,7 @@ functions:
       TRELLO_API_URL: 'https://api.trello.com'
       TRELLO_API_KEY: ${ssm:/trello/api-key}
       TRELLO_API_TOKEN: ${ssm:/trello/api-token~true}
+      LOG_LEVEL: ${opt:log-level, 'INFO'}
 
 # you can add CloudFormation resource templates here
 #resources:
