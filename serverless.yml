@@ -1,6 +1,8 @@
 service: trello-automation
 frameworkVersion: '2'
 
+configValidationMode: error
+
 provider:
   name: aws
   runtime: python3.8
